@@ -17,6 +17,7 @@
 body {
   font-family: var(--main-text-font), sans-serif;
   color: var(--main-text-color);
+  min-width: 1200px;
 }
 
 h1,
@@ -58,6 +59,7 @@ img {
 .page-header {
   padding: 24px 0;
   border-bottom: 1px solid var(--header-border-color);
+  /* min-width: 1200px; */
 }
 
 .header-container {
@@ -139,6 +141,7 @@ img {
   background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)), url(../images/hero-background-image.jpg);
   background-position: center;
   background-size: cover;
+  /* min-width: 1200px; */
 }
 
 .hero-heading {
