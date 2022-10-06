@@ -196,6 +196,16 @@ img {
   flex-basis: calc((100%-30px) / 4);
 }
 
+.advantage .item:before {
+  content: '';
+  width: 270px;
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 30px;
+}
+
 .advantage-titles {
   font-size: 14px;
   line-height: 1.17;
