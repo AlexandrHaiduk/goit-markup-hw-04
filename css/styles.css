@@ -116,12 +116,20 @@ img {
   margin-left: 50px;
 }
 
+.contacts-icon {
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: var(--secondary-text-color);
+}
+
 .mail,
 .telephone {
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
   color: var(--secondary-text-color);
+  vertical-align: middle;
+  outline: 1px solid red;
 }
 
 .mail:focus,
@@ -129,6 +137,7 @@ img {
 .telephone:focus,
 .telephone:hover {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* !!! MAIN SECTION!!!! */
@@ -324,22 +333,21 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 22px;
+  height: 22px;
+  fill: #afb1b8;
+}
+
+.social-item a:hover {
   background-color: #188ce8;
-}
-
-.social-item svg {
-  width: 50%;
-  height: 50%;
-  fill: currentColor;
-}
-
-.icon-test {
-  fill: tomato;
-}
-
-.social-item use {
-  width: 20px;
-  fill: currentColor;
+  fill: white;
 }
 
 /* !!!!!FOOTER!!!!!! */
