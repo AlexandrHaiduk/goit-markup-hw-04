@@ -117,9 +117,8 @@ img {
 }
 
 .contacts-icon {
-  vertical-align: middle;
   margin-right: 10px;
-  fill: var(--secondary-text-color);
+  fill: currentColor;
 }
 
 .mail,
@@ -129,7 +128,8 @@ img {
   font-weight: 500;
   color: var(--secondary-text-color);
   vertical-align: middle;
-  outline: 1px solid red;
+  display: flex;
+  align-items: center;
 }
 
 .mail:focus,
@@ -137,7 +137,6 @@ img {
 .telephone:focus,
 .telephone:hover {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* !!! MAIN SECTION!!!! */
@@ -202,7 +201,7 @@ img {
   flex-basis: calc((100%-30px) / 4);
 }
 
-.advantage .item:before {
+/* .advantage .item:before {
   content: '';
   width: 270px;
   height: 120px;
@@ -210,9 +209,9 @@ img {
   border-radius: 4px;
   display: block;
   margin-bottom: 30px;
-}
+} */
 
-.icon-satellite:before {
+/* .icon-satellite:before {
   background-image: url(../images/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -234,6 +233,22 @@ img {
   background-image: url(../images/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
+} */
+
+.advantage-icons {
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  width: 70px;
+  height: 70px;
 }
 
 .advantage-titles {
@@ -328,26 +343,26 @@ img {
   justify-content: center;
 }
 
-.social-item a {
+.social-link {
   display: block;
   width: 44px;
   height: 44px;
-  border-radius: 100%;
-  background-color: white;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--secondary-text-color);
 }
 
 .social-icon {
   width: 22px;
   height: 22px;
-  fill: #afb1b8;
+  fill: currentColor;
 }
 
-.social-item a:hover {
+.social-link:hover {
   background-color: #188ce8;
-  fill: white;
+  color: var(--white-color);
 }
 
 /* !!!!!FOOTER!!!!!! */
