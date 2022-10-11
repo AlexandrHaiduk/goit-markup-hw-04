@@ -147,10 +147,7 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      var(--hero-background-color),
-      var(--hero-background-color)
-    ),
+  background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)),
     url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
   background-position: center;
@@ -378,16 +375,53 @@ img {
   text-align: center;
 }
 
+.regular-customers-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.customers-item {
+  display: flex;
+  flex-basis: calc((100% - 150px) / 6);
+  border: 1px solid var(--social-links-main-color);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 106px;
+  height: 60px;
+  color: var(--social-links-main-color);
+}
+
+.customers-link:hover {
+  border: 3px solid var(--accent-color);
+}
+
+.customers-link:hover .customers-item {
+  border: 3px solid var(--accent-color);
+}
+
+.customers-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
 .regular-customers-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
 }
-
-
 
 /* !!!!!FOOTER!!!!!! */
 
@@ -449,7 +483,7 @@ img {
 
 .footer-social-title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -459,11 +493,12 @@ img {
 
 .social-link-footer {
   background-color: var(--social-links-footer-background-color);
+  color: var(--white-color);
 }
 
 /* ----------------!!!PORTFOLIO.HTML!!!------------------ */
 
-/* PROJECT SECTION */
+/* !!!!!PROJECT-SECTION!!!!!! */
 
 .project {
   padding: 94px 0;
