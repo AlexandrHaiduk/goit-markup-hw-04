@@ -12,6 +12,7 @@
   --project-item-border: #eeeeee;
   --hero-background-color: rgba(47, 48, 58, 0.4);
   --social-links-main-color: #afb1b8;
+  --social-links-footer-background-color: rgba(255, 255, 255, 0.1);
   --logo-font: raleway;
 }
 
@@ -146,7 +147,10 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)),
+  background-image: linear-gradient(
+      var(--hero-background-color),
+      var(--hero-background-color)
+    ),
     url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
   background-position: center;
@@ -366,12 +370,35 @@ img {
   color: var(--white-color);
 }
 
+/* !!!!!REGULAR-CUSTOMERS!!!!! */
+
+.regular-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.regular-customers-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+
+
 /* !!!!!FOOTER!!!!!! */
 
 .footer {
   background-color: var(--secondary-accent-color);
   color: var(--white-color);
   padding: 60px 0;
+}
+
+.footer-container {
+  display: flex;
 }
 
 .footer .item {
@@ -413,6 +440,25 @@ img {
 .map-pointer:hover,
 .map-pointer:focus {
   color: var(--accent-color);
+}
+
+.footer-thumb-social {
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.footer-social-title {
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.social-link-footer {
+  background-color: var(--social-links-footer-background-color);
 }
 
 /* ----------------!!!PORTFOLIO.HTML!!!------------------ */
