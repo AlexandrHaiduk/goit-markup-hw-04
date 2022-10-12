@@ -149,10 +149,7 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      var(--hero-background-color),
-      var(--hero-background-color)
-    ),
+  background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)),
     url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
   background-position: center;
@@ -356,41 +353,35 @@ img {
 
 .customers-item {
   display: flex;
-  flex-basis: calc((100% - 150px) / 6);
-  border: 1px solid var(--social-links-main-color);
-  border-radius: 4px;
   align-items: center;
   justify-content: center;
 }
 
 .customers-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: var(--social-links-main-color);
-  padding: 15px 31px;
-  box-sizing: content-box;
-}
-
-.customers-item:hover {
-  border-color: var(--accent-color);
-  outline: 0;
+  padding: 16px 32px;
+  border: 1px solid var(--social-links-main-color);
+  border-radius: 4px;
+  max-width: 170px;
+  max-height: 92px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
   color: var(--accent-color);
+  border-color: var(--accent-color);
+
   outline: 0;
 }
 
 .customers-icon {
-  width: 106px;
-  height: 60px;
+  /* width: 106px;
+  height: 60px; */
   fill: currentColor;
 }
 
 .regular-customers-title {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -459,7 +450,7 @@ img {
 
 .footer-social-title {
   margin-bottom: 20px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
