@@ -61,7 +61,6 @@ img {
 .page-header {
   padding: 24px 0;
   border-bottom: 1px solid var(--header-border-color);
-  /* min-width: 1200px; */
 }
 
 .header-container {
@@ -209,19 +208,13 @@ img {
 }
 
 .advantage-icons {
-  width: 270px;
-  height: 120px;
+  padding: 25px 100px;
   background-color: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.icon {
-  width: 70px;
-  height: 70px;
 }
 
 .advantage-titles {
@@ -326,8 +319,6 @@ img {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -375,8 +366,6 @@ img {
 }
 
 .customers-icon {
-  /* width: 106px;
-  height: 60px; */
   fill: currentColor;
 }
 
