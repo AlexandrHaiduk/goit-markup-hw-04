@@ -214,7 +214,7 @@ img {
 .advantage-icons {
   width: 270px;
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: var(--secondary-background-color);
   border-radius: 4px;
   margin-bottom: 30px;
   display: flex;
@@ -336,7 +336,7 @@ img {
 
 .social-link:hover,
 .social-link:focus {
-  background-color: #188ce8;
+  background-color: var(--button-hover-color);
   color: var(--white-color);
   outline: 0;
 }
