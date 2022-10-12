@@ -107,6 +107,7 @@ img {
 .nav-main .link:focus,
 .nav-main .link:hover {
   color: var(--accent-color);
+  outline: 0;
 }
 
 .contacts {
@@ -139,6 +140,7 @@ img {
 .telephone:focus,
 .telephone:hover {
   color: var(--accent-color);
+  outline: 0;
 }
 
 /* !!! MAIN SECTION!!!! */
@@ -147,7 +149,10 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(var(--hero-background-color), var(--hero-background-color)),
+  background-image: linear-gradient(
+      var(--hero-background-color),
+      var(--hero-background-color)
+    ),
     url(../images/hero-background-image.jpg);
   background-color: var(--hero-background-color);
   background-position: center;
@@ -187,6 +192,7 @@ img {
 .hero-button:hover {
   cursor: pointer;
   background-color: var(--button-hover-color);
+  outline: 0;
 }
 
 /* !!!!!!! ADVANTAGE SECTION!!!!!!!! */
@@ -204,7 +210,6 @@ img {
 .advantage .item {
   flex-basis: calc((100%-30px) / 4);
 }
-
 
 .advantage-icons {
   width: 270px;
@@ -289,7 +294,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   font-weight: 500;
-  text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
@@ -298,7 +302,6 @@ img {
   font-size: 16px;
   line-height: 1.19;
   color: var(--secondary-text-color);
-  text-align: center;
   letter-spacing: 0.03em;
   padding-bottom: 16px;
 }
@@ -331,11 +334,11 @@ img {
   fill: currentColor;
 }
 
-.social-link:hover, 
-.social-link:focus
- {
+.social-link:hover,
+.social-link:focus {
   background-color: #188ce8;
   color: var(--white-color);
+  outline: 0;
 }
 
 /* !!!!!REGULAR-CUSTOMERS!!!!! */
@@ -343,7 +346,6 @@ img {
 .regular-customers {
   padding-top: 94px;
   padding-bottom: 94px;
-  text-align: center;
 }
 
 .regular-customers-list {
@@ -362,7 +364,7 @@ img {
 }
 
 .customers-link {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   color: var(--social-links-main-color);
@@ -370,20 +372,17 @@ img {
   box-sizing: content-box;
 }
 
-.customers-link svg {
-  display: flex;
-  justify-content: center;  
-}
-
 
 
 .customers-item:hover {
   border-color: var(--accent-color);
+  outline: 0;
 }
 
-.customers-item:hover .customers-link  {
+.customers-link:hover, .customers-link:focus {
   color: var(--accent-color);
-}
+  outline: 0;
+} 
 
 .customers-icon {
   width: 106px;
@@ -391,9 +390,8 @@ img {
   fill: currentColor;
 }
 
-
 .regular-customers-title {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -452,6 +450,7 @@ img {
 .map-pointer:hover,
 .map-pointer:focus {
   color: var(--accent-color);
+  outline: 0;
 }
 
 .footer-thumb-social {
@@ -461,7 +460,7 @@ img {
 
 .footer-social-title {
   margin-bottom: 20px;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -494,7 +493,6 @@ img {
   line-height: 1.62;
   font-weight: 500;
   background-color: var(--secondary-background-color);
-  text-align: center;
   letter-spacing: 0.03em;
   padding: 6px 22px;
   border: 0;
@@ -508,6 +506,8 @@ img {
   cursor: pointer;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: 0;
+    
 }
 
 .project-list {
@@ -518,6 +518,12 @@ img {
 
 .project-list .item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.project-list .item:hover, 
+.project-list .item:focus {
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+outline: 0;
+
 }
 
 .project-definition {
